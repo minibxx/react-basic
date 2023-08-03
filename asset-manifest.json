@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-basic/static/css/main.469a98c1.css",
-    "main.js": "/react-basic/static/js/main.37efd53b.js",
-    "static/js/787.73f4ee36.chunk.js": "/react-basic/static/js/787.73f4ee36.chunk.js",
-    "static/media/brave-cookie.gif": "/react-basic/static/media/brave-cookie.f9cc2253894d4c001062.gif",
-    "static/media/3.png": "/react-basic/static/media/3.471f7dfdbe8c0ee0b902.png",
-    "static/media/2.png": "/react-basic/static/media/2.f56b1dc1b452e3ac1e43.png",
-    "static/media/logo.svg": "/react-basic/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/react-basic/index.html",
-    "main.469a98c1.css.map": "/react-basic/static/css/main.469a98c1.css.map",
-    "main.37efd53b.js.map": "/react-basic/static/js/main.37efd53b.js.map",
-    "787.73f4ee36.chunk.js.map": "/react-basic/static/js/787.73f4ee36.chunk.js.map"
+    "main.css": "/static/css/main.469a98c1.css",
+    "main.js": "/static/js/main.931c3321.js",
+    "static/js/787.05671433.chunk.js": "/static/js/787.05671433.chunk.js",
+    "static/media/brave-cookie.gif": "/static/media/brave-cookie.f9cc2253894d4c001062.gif",
+    "static/media/3.png": "/static/media/3.471f7dfdbe8c0ee0b902.png",
+    "static/media/2.png": "/static/media/2.f56b1dc1b452e3ac1e43.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.469a98c1.css.map": "/static/css/main.469a98c1.css.map",
+    "main.931c3321.js.map": "/static/js/main.931c3321.js.map",
+    "787.05671433.chunk.js.map": "/static/js/787.05671433.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.469a98c1.css",
-    "static/js/main.37efd53b.js"
+    "static/js/main.931c3321.js"
   ]
 }

@@ -6,7 +6,7 @@ import {Link,BrowserRouter,Route,Routes} from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter> 
+    <BrowserRouter basename='/react-basic'> 
       <div className="wrap">
         <header>
           <nav> 

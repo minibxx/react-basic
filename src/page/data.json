@@ -1,0 +1,5 @@
+[
+    {"id":"code100", "name":"브릭시티", "price":"1000", "thumb":"./2.png"},
+    {"id":"code200", "name":"쿠키런", "price":"2000", "thumb":"./3.png"},
+    {"id":"code200", "name":"퍼즐월드", "price":"2000", "thumb":"./4.png"}
+]

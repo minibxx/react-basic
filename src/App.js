@@ -7,12 +7,13 @@ import data from './page/data';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import ParamItem from './page/ParamItem';
+import Test from './page/Test';
 
 function App() {
   let [data_b,setData] = useState();
 
   useEffect(function(){  
-    axios.get('./data_b.json')
+    axios.get('/data_b.json')
     .then(d=>{
       setData(d.data);
     });
@@ -37,6 +38,7 @@ function App() {
             <Route path="/product" element={<Product  data={data} />} />
             <Route path="/product_b" element={<Product_b  data={data_b} />} />
             <Route path="/paramItem/:code" element={<ParamItem data={data_b}/>} />
+            <Route path="/test" element={<Test testProp={data[1]} />} />
           </Routes>
       </main>
     </BrowserRouter>

@@ -5,7 +5,7 @@ function Product({data}) {
   return (
     <>
       <div class="product-col">
-          <h2>최애즈</h2>
+          <h2>사룽햐</h2>
           <div class="product-a">
               {
                   // data.map(function(){
@@ -13,10 +13,9 @@ function Product({data}) {
                   // })
 
                   data.map((item,k)=>(
-                      <Item key={item.id} item={item}/>
+                    <Item key={item.id} item={item}/>
                   ))
               }
-              
           </div>
       </div>
        

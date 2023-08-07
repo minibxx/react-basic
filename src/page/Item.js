@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 
 function Item({item}) {
 
-    let preview = ()=>{
-        console.log('sdfsdfsdf')
-    }
+  let preview = () => {
+    console.log('sdfsdfsdf')
+  }
+
 
   return (
     <figure onClick={preview}>

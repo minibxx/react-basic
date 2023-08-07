@@ -11,9 +11,9 @@ function Item({item}) {
     <figure onClick={preview}>
         <p><img src= {item.thumb} /></p>
         <figcaption>
-            <b> {item.name} </b>
-            <p> {item.price} </p>
-            <Link to={`/paramItem/${item.id}`}> 자세히보기 </Link>
+            <p>{item.name}</p>
+            <Link to ={`/paramItem/${item.id}`}>우리 {item.name}는요</Link>
+          
         </figcaption>
     </figure>
   )

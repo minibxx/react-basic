@@ -1,5 +1,5 @@
 [
-    {"id":"code100", "name":"p01", "price":"1000", "thumb":"./4.png"},
-    {"id":"code200", "name":"p02", "price":"2000", "thumb":"./5.png"},
-    {"id":"code200", "name":"p02", "price":"2000", "thumb":"./3.png"}
+    {"id":"code200", "name":"lottso", "price":"2000", "thumb":"./lottso.png", "slogan":"우린 모두 다 버려지길 기다리는 쓰레기일 뿐이야. 그게 장난감이라고."},
+    {"id":"code100", "name":"buz", "price":"1000", "thumb":"./buz.jpg",  "slogan":"무한한 공간 저 너머로!"},
+    {"id":"code200", "name":"woody", "price":"2000", "thumb":"./woody.jpg",  "slogan":"내 부츠에 뱀이 들어있다!"}
 ]

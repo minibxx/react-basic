@@ -2,41 +2,26 @@ import {BrowserRouter,Routes, Route, Link} from 'react-router-dom';
 import './App.scss';
 import Home from './page/Home';
 import Product from './page/Product';
-import Product_b from './page/Product_b';
-import data from './page/data';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import data from './page/data.json';
+import fdata from './page/Fdata';
 import ParamItem from './page/ParamItem';
+import Family from './page/Family';
 
 function App() {
-  let [data_b,setData] = useState();
-
-  useEffect(function(){  
-    axios.get('./data_b.json')
-    .then(d=>{
-      setData(d.data);
-    });
-
-  },[]) 
-
-
-  if(!data_b) return <>  로딩중....  </>;
-
   return (
-    <BrowserRouter className="App">
+    <BrowserRouter>
       <header className="App-header">
         <Link to="/">HOME</Link>
-        <Link to="/product">Product</Link>
-        <Link to="/product_b">Product_b</Link>
-        <Link to="/paramItem/code100">Param Item</Link>
+        <Link to="/product">랏소 · 우디 · 버즈</Link>
+        <Link to="/family">토이패밀리</Link>
       </header>
 
       <main>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/product" element={<Product  data={data} />} />
-            <Route path="/product_b" element={<Product_b  data={data_b} />} />
-            <Route path="/paramItem/:code" element={<ParamItem data={data_b}/>} />
+            <Route path="/paramItem/:code" element={<ParamItem data={data}/>} />
+            <Route path="/family" element={<Family data={fdata} />} />
           </Routes>
       </main>
     </BrowserRouter>

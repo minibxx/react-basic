@@ -1,16 +1,11 @@
 import React from 'react'
 import Item from './Item'
 
-
-
 function Product({data}) {
-
-    
-
   return (
     <>
       <div class="product-col">
-          <h2>Product</h2>
+          <h2>최애즈</h2>
           <div class="product-a">
               {
                   // data.map(function(){

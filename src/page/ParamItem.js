@@ -7,7 +7,14 @@ function ParamItem({data}) {
   let detail = data.filter(obj => obj.id === code);
 
   return (
-    <div>{detail[0].name}</div>
+    <>
+    <div class="detail-content">
+      <div>{detail[0].name}</div>
+      <div><img src={`../${detail[0].thumb}`}></img></div>
+      <div>{detail[0].slogan}</div>
+    </div>
+    </>
+    
   )
 }
 

@@ -1,11 +1,11 @@
 import React from 'react';
-import lll from '../page/brave-cookie.gif';
+import lll from '../page/toystory.gif';
 
 function Home() {
   return (
     <>
     <div>
-        <h1 style={{fontStyle:"italic"}}>Be BRAVE, Stay CRISPY</h1>
+        <h1 style={{color:"#000"}}>To infinity and beyond  ⌯'-'⌯</h1>
         <img src={lll}></img>
     </div>
     </>

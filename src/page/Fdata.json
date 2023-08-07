@@ -1,0 +1,7 @@
+[
+    {"id":"code200", "name":"andy", "intro": "우디와 버즈가 뭉치면 천하무적이다!", "thumb":"./andy.jpg"},
+    {"id":"code200", "name":"jessi", "intro": "정말 특별한 아이라고? ", "thumb":"./jessi2.gif"},
+    {"id":"code200", "name":"potato", "intro": "넌 날 매쉬 포테이토로 만들진 못해.", "thumb":"./potato.jpg"},
+    {"id":"code100", "name":"forky", "intro": "Carry me?", "thumb":"./foky.gif"},
+    {"id":"code200", "name":"rex", "intro": "이제 게임은 지겨워, 난 졸업했어.", "thumb":"./rex.png"}
+]

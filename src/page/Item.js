@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Item({item}) {
 
@@ -12,6 +13,7 @@ function Item({item}) {
         <figcaption>
             <b> {item.name} </b>
             <p> {item.price} </p>
+            <Link to={`/paramItem/${item.id}`}> 자세히보기 </Link>
         </figcaption>
     </figure>
   )

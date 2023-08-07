@@ -5,6 +5,7 @@ function Product_b({data}) {
 
   return (
     <>
+      <div class="product-col">
         <h2>Product</h2>
         <div class="product-a">
             {
@@ -14,7 +15,7 @@ function Product_b({data}) {
             }
             
         </div>
-       
+    </div>
     </>
   )
 }

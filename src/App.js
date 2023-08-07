@@ -28,14 +28,15 @@ function App() {
         <Link to="/">HOME</Link>
         <Link to="/product">Product</Link>
         <Link to="/product_b">Product_b</Link>
-        <Link to="/paramItem">Param Item</Link>
+        <Link to="/paramItem/code100">Param Item</Link>
       </header>
+
       <main>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/product" element={<Product  data={data} />} />
             <Route path="/product_b" element={<Product_b  data={data_b} />} />
-            <Route path="/paramItem" element={<ParamItem />} />
+            <Route path="/paramItem/:code" element={<ParamItem data={data_b}/>} />
           </Routes>
       </main>
     </BrowserRouter>

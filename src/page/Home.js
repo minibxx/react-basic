@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import lll from '../page/brave-cookie.gif';
 
 function Home() {
+  
+  useEffect(() => {
+    console.log('Home mount');
+    return (() => {
+      console.log('Home unmount');
+    })
+  }, []);
+
   return (
     <>
     <div>

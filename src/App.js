@@ -14,11 +14,11 @@ function App() {
 
   useEffect(function(){  
     axios.get('/data_b.json')
-    .then(d=>{
-      setData(d.data);
+    .then(res => {
+      setData(res.data);
     });
 
-  },[]) 
+  }, []);
 
 
   if(!data_b) return <>  로딩중....  </>;
@@ -38,7 +38,7 @@ function App() {
             <Route path="/product" element={<Product  data={data} />} />
             <Route path="/product_b" element={<Product_b  data={data_b} />} />
             <Route path="/paramItem/:code" element={<ParamItem data={data_b}/>} />
-            <Route path="/test" element={<Test testProp={data[1]} />} />
+            <Route path="/test" element={<Test testProp={data} />} />
           </Routes>
       </main>
     </BrowserRouter>

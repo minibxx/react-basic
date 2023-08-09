@@ -13,6 +13,8 @@ function Clickscroll() {
     elScroll.children.forEach((el)=>{
       if(el.offsetTop < window.pageYOffset + window.innerHeight ){
         el.classList.add('active');
+      }else{
+        el.classList.remove('active'); // 스크롤 올라갈 때 active 클래스 제거 -> 안됨 이슈
       }
     })
   }
@@ -32,7 +34,7 @@ function Clickscroll() {
 
   
   return (
-    <>
+    <article>
       <h2>Scroll</h2>
       <div className="scroll">
         <figure>01</figure>
@@ -42,7 +44,7 @@ function Clickscroll() {
         <figure>05</figure>
         <figure>06</figure>
       </div>
-    </>
+    </article>
   )
 }
 

@@ -1,8 +1,9 @@
-[
-    '리액트 공부하기',
-    '점심먹기',
-    '프로젝트 제작하기',
-    '술 한잔',
-    '게임하기',
-    '잠자기'
-]
+import React from 'react'
+
+function List() {
+  return (
+    <div>List</div>
+  )
+}
+
+export default List

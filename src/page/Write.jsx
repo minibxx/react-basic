@@ -8,23 +8,21 @@ function Write() {
     e.preventDefault(); 
     let v = e.target;
     let d = {
-        name:v.name.value, 
-        email:v.email.value, 
-        txt:v.txt.value, 
-        id:Date.now()
+        name:v.name.value
     }
     setData([...data,d]);
   }
   return (
-    <article>
-        <h2>Write</h2>
+    <>
+        <div class="write">
+            <div>참여자 등록</div>
         <form onSubmit={insert}>
             <input type="text" name="name"/>
-            <input type="email" name="email"/>
-            <textarea name="txt"></textarea>
-            <input type="submit" value="저장"/>            
+            <input class="submit" type="submit" value="저장"/>            
         </form>
-    </article>
+        </div>
+    </>
+      
   )
 }
 

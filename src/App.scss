@@ -7,22 +7,55 @@
 
 *{ font-family: 'omyu_pretty'; box-sizing: border-box;}
 a{ text-decoration: none; }
-li{ list-style-type: none; }
+ul, li{ list-style-type: none; margin: 0; padding: 0;}
 html{
-  font-size: 24px;
+  font-size: 28px;
 }
 article{
   width:50%; margin:100px auto;
+  height: 50vh;
   padding:60px; 
   background-color: rgb(242, 242, 242);
   box-shadow: 0 0 10px rgb(190, 190, 190);
   border-radius: 30px;
+  position: relative;
+}
+.write{
+  width: 70%;
+  background-color: rgb(255, 221, 221);
+  padding: 30px 0;
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 10px;
+  position: absolute;
+  left: 0; right: 0;
+  >div{
+    margin-bottom: 10px;
+  }
+}
+
+button{
+  background-color:  rgb(255, 255, 185);
+  border-style: none;
+  padding: 5px 13px; border-radius: 40px;
+  font-size: 24px;
+  margin-left: 95%;
 }
 input, textarea{
-  width:100%; margin:5px 0;
+  width: 90%; margin:5px;
   padding:10px;
   border-style: none;
   border-radius: 5px;
+  font-size: 20px;
 }
+
 textarea{height:200px;}
 li{ padding:15px 0; border-bottom:1px dashed black}
+
+.submit{
+  background-color: rgb(255, 255, 185);
+}
+
+.active{
+  display: none;
+}

@@ -7,19 +7,15 @@ function List() {
   console.log(data)
 
   return (
-   <article>
-    <h2>List</h2>
     <ul>
         {
             data.map((item)=>( 
                 <li key={item.id}>
-                    {item.name}({item.email})<br/>
-                    {item.txt}({Date(item.id)})
+                    {item.name}
                 </li>
                 ))
         }
     </ul>
-   </article>
   )
 }
 

@@ -12,9 +12,9 @@ html{
   font-size: 28px;
 }
 article{
-  width:50%; margin:100px auto;
-  height: 50vh;
-  padding:60px; 
+  width:500px; margin:100px auto;
+  height: 75vh;
+  padding:10px 30px; 
   background-color: rgb(242, 242, 242);
   box-shadow: 0 0 10px rgb(190, 190, 190);
   border-radius: 30px;
@@ -29,17 +29,19 @@ article{
   border-radius: 10px;
   position: absolute;
   left: 0; right: 0;
+  bottom: 5%;
   >div{
     margin-bottom: 10px;
   }
 }
 
-button{
+.plus{
   background-color:  rgb(255, 255, 185);
   border-style: none;
   padding: 5px 13px; border-radius: 40px;
   font-size: 24px;
-  margin-left: 95%;
+  margin-top: 3%;
+  margin-left: 93%;
 }
 input, textarea{
   width: 90%; margin:5px;
@@ -58,4 +60,16 @@ li{ padding:15px 0; border-bottom:1px dashed black}
 
 .active{
   display: none;
+}
+
+.minus{
+  background-color:  rgb(203, 214, 255);
+  border-style: none;
+  font-size: 24px;
+  padding: 2px 10px; border-radius: 40px;
+  margin-right: 20px;
+}
+.count{
+  color: rgb(255, 52, 113);
+  margin-bottom: 10px;
 }

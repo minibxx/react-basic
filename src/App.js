@@ -6,10 +6,11 @@ import { useState } from 'react';
 
 function App() {
   const [state, setState] = useState(false);
+
   return (
     <>
     <article>
-      <button onClick={()=> { setState((e) => !e);}}>+</button>
+      <button class="plus" onClick={()=> { setState((e) => !e);}}>+</button>
       <MyContext>
         <div className={state?'active':''}><Write/></div>
         <List/>

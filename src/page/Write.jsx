@@ -7,10 +7,19 @@ function Write() {
   let insert = (e)=>{  
     e.preventDefault(); 
     let v = e.target;
-    let d = {
-        name:v.name.value
+
+    if(data.length > 9){
+      return false;
     }
-    setData([...data,d]);
+
+    if(v.name.value != ''){
+      let d = {
+          name:v.name.value,
+          id:Date.now()
+      }
+      setData([...data,d]);
+    }
+    e.target.name.value = '';
   }
   return (
     <>

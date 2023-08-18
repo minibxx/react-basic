@@ -3,7 +3,7 @@ const MyContect = createContext();
 
 const reducer = (state, action)=>{
     switch(action.type){
-        case 'insert' : return state 수정;
+        case 'insert' : return state 수 정;
     }
 }
 

@@ -61,7 +61,7 @@ function App() {
     if(mode){
       setData([...data,{todo, state:false, date:Date.now()}]); //데이터 넣고 useS
       e.target.todo.value = '';
-      setData=''; //입력창 비워주기 라는 것 같어요
+      setMData(''); //입력창 비워주기 라는 것 같어요
     }else{
       //수정하기
       console.log(mCode);

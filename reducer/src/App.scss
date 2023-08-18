@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+*{  
+  font-family: 'omyu_pretty';
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+article{
+  width:60%; margin:70px auto;
+}
+
+h2{ 
+  border-bottom:2px solid black; 
+  padding-bottom: 15px;
+}
+
+ul,li{list-style: none; margin:0; padding:0;}
+input,textarea{width:100%; padding:10px; margin:10px 0;}
+textarea{height:200px}

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'omyu_pretty';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{ font-family: 'omyu_pretty';}
+a{ text-decoration: none; }
+ul, li{ list-style-type: none; padding: 0; margin: 0;}
+html{font-size: 24px;}
+h2{
+  margin-bottom: 20px; padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+header{
+  background-color: #fff8d4;
+  padding:20px 0;
+  text-align: center;
+}
+header a{color: rgb(255, 98, 132); padding:0 20px;}
+article{
+  width:400px;
+  padding:40px;
+  margin: 30px auto;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(218, 206, 41, 0.3);
+}
+.order{ 
+  padding:15px 0; 
+  border-bottom: 1px solid #ddd;
+  display: block; display: flex; 
+  justify-content: space-between; flex-direction: row;
+}
+code{
+  font-family: 'omyu_pretty';
+}
+.total{
+  background-color: rgb(255, 141, 166);
+  padding:20px 0; 
+  text-align: center;
+  color:white;
+  font-size:1.2rem;
+}
+
+input, textarea{
+  width:95%; padding:10px; 
+  margin: 5px 0;
+  border: none;
+  background-color:  rgb(255, 239, 239);
+}
+textarea{height:200px;}

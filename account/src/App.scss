@@ -20,7 +20,7 @@ header{
 }
 header a{color: rgb(255, 98, 132); padding:0 20px;}
 article{
-  width:400px;
+  width:600px;
   padding:40px;
   margin: 30px auto;
   border-radius: 30px;
@@ -31,7 +31,12 @@ article{
   padding:15px 0; 
   border-bottom: 1px solid #ddd;
   display: block; display: flex; 
-  justify-content: space-between; flex-direction: row;
+  justify-content: flex-start; flex-direction: row;
+  font-size: 22px;
+  >div{
+    width: 150px;
+  }
+  
 }
 code{
   font-family: 'omyu_pretty';
@@ -45,9 +50,29 @@ code{
 }
 
 input, textarea{
-  width:95%; padding:10px; 
+  width:96%; padding:10px; 
   margin: 5px 0;
   border: none;
   background-color:  rgb(255, 239, 239);
 }
 textarea{height:200px;}
+
+.textarea2{
+  background-color:  rgb(233, 245, 255);
+}
+
+button{
+  width: 48%; padding: 20px;
+  border-style: none; font-size: 20px;
+
+}
+.buttons{
+  display: flex; justify-content: space-between;
+}
+.button-1{
+  display: flex; justify-content: space-between;
+  >button{
+    width: 45%; padding: 5px 10px; 
+    border-style: none; font-size: 20px;
+  }
+}

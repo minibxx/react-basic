@@ -8,71 +8,43 @@
 *{ font-family: 'omyu_pretty';}
 a{ text-decoration: none; }
 ul, li{ list-style-type: none; padding: 0; margin: 0;}
-html{font-size: 24px;}
-h2{
-  margin-bottom: 20px; padding-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-}
-header{
-  background-color: #fff8d4;
-  padding:20px 0;
-  text-align: center;
-}
-header a{color: rgb(255, 98, 132); padding:0 20px;}
+
 article{
-  width:600px;
-  padding:40px;
-  margin: 30px auto;
+  width: 400px; height: 600px;
+  padding:40px; margin: 30px auto;
   border-radius: 30px;
-  background-color: white;
-  box-shadow: 0 0 20px rgba(218, 206, 41, 0.3);
+  background-color: rgb(245, 245, 245);
+  display: flex; flex-direction: column;
+  justify-content: space-between;
 }
-.order{ 
-  padding:15px 0; 
-  border-bottom: 1px solid #ddd;
-  display: block; display: flex; 
-  justify-content: flex-start; flex-direction: row;
-  font-size: 22px;
-  >div{
-    width: 150px;
-  }
-  
+.titleWrap{
+  font-size: 25px; font-weight: 600;
+  margin: 20px 0;
 }
+
+.inputTitle{
+  margin: 7px 0;
+}
+
 code{
   font-family: 'omyu_pretty';
 }
-.total{
-  background-color: rgb(255, 141, 166);
-  padding:20px 0; 
-  text-align: center;
-  color:white;
-  font-size:1.2rem;
-}
 
-input, textarea{
+input{
   width:96%; padding:10px; 
   margin: 5px 0;
-  border: none;
-  background-color:  rgb(255, 239, 239);
-}
-textarea{height:200px;}
-
-.textarea2{
-  background-color:  rgb(233, 245, 255);
+  border: 0.5px solid rgb(215, 215, 215);
+  border-radius: 5px;
+  background-color:  rgb(255, 255, 255);
 }
 
 button{
-  width: 48%; padding: 20px;
+  width: 100%; padding: 10px;
+  border-radius: 30px; color: white;
   border-style: none; font-size: 20px;
+  background-color: rgb(144, 0, 255);
+}
 
-}
-.buttons{
-  display: flex; justify-content: space-between;
-}
-.button-1{
-  display: flex; justify-content: space-between;
-  >button{
-    width: 45%; padding: 5px 10px; 
-    border-style: none; font-size: 20px;
-  }
+.error{
+  color: rgb(220, 61, 61); margin: 7px 0 30px 0;
 }

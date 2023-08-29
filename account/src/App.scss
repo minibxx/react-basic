@@ -43,8 +43,14 @@ button{
   border-radius: 30px; color: white;
   border-style: none; font-size: 20px;
   background-color: rgb(144, 0, 255);
+  cursor: pointer;
 }
 
 .error{
   color: rgb(220, 61, 61); margin: 7px 0 30px 0;
+}
+
+button:disabled{
+  background-color: #dadada;
+  color: white;
 }

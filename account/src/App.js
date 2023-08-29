@@ -4,13 +4,14 @@ import logo from './logo.svg';
 import './App.scss';
 import Login from './component/Login';
 
+
 function App() {
 
   return (
       <HashRouter>
         <main>
           <Routes>
-            <Route path='/' element={<Login />} />
+            <Route path='/' element={<Login/>} />
           </Routes>
         </main>
       </HashRouter>

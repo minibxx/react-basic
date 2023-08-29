@@ -23,11 +23,11 @@ function Insert() {
       <article>
           <h2>Insert</h2>
           <form ref={elForm}>
-              <input type="text" name="price"/>
-              <textarea name="text"></textarea>
+              <input type="text" name="text"/>
+              <textarea name="price"></textarea>
                 <div className='buttons'>
-                  <button onClick={(e)=>{insertFn('p',e)}}>예금하기</button>
-                  <button onClick={(e)=>{insertFn('m',e)}}>출금하기</button>
+                  <button onClick={(e)=>{insertFn('p',e)}}>출금</button>
+                  <button onClick={(e)=>{insertFn('m',e)}}>예금</button>
                 </div>
           </form>
       </article>

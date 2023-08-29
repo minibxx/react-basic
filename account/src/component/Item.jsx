@@ -3,7 +3,7 @@ import { MyContext } from '../Context';
 import { useNavigate } from 'react-router-dom';
 
 
-function Item({obj}) {
+function Item({obj, abc}) {
   const navigate = useNavigate();
   const {fetchFn} = useContext(MyContext);
   
@@ -17,6 +17,7 @@ function Item({obj}) {
             <button onClick={()=> {navigate('./edit',{state:{obj}})}}>수정</button>
             <button onClick={()=> {fetchFn('del', obj.id)}}>삭제</button>
           </div>
+          {abc}
       </li>
     </>
   )

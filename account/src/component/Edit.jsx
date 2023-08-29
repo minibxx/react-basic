@@ -9,8 +9,8 @@ function Edit() {
 
   const navigate = useNavigate();   
   const {fetchFn} = useContext(MyContext);
-  const insertFn = (t,e)=>{
-        
+  
+  const insertFn = (t,e)=>{      
     e.preventDefault();
 
     let formdata = new FormData(elForm.current);
@@ -31,8 +31,8 @@ function Edit() {
           <input className="textarea2" type="text" name="price" defaultValue={text}/>
           <textarea className="textarea2" name="text" defaultValue={price}></textarea>
           <div className='buttons'>
-            <button onClick={(e)=>{insertFn('p',e)}}>예금하기</button>
-            <button onClick={(e)=>{insertFn('m',e)}}>출금하기</button>
+            <button onClick={(e)=>{insertFn('p',e)}}>완료</button>
+            <button onClick={(e)=>{insertFn('m',e)}}>끝~</button>
           </div>
       </form>
     </article>

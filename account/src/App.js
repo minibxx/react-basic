@@ -16,7 +16,7 @@ function App() {
           <nav>
             <Link to ="/">Home</Link>
             <Link to ="/insert">Insert</Link>
-            <Link to ="/edit">Edit</Link>
+            {/* <Link to ="/edit">Edit</Link> */}
           </nav>
         </header>
         <main>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState  } from 'react'
 import axios from 'axios'
 
-export default function Movie() {
+export default function Tmovie() {
     const [movieDataP, setMovieDataP] = useState([]);
     const [movieDataT, setMovieDataT] = useState([]);
     const dbData = axios.create({
@@ -11,7 +11,7 @@ export default function Movie() {
     //트랜딩 무비
     useEffect(function(){
         dbData
-        .get('/tv/popular')
+        .get('/movie/popular')
         .then(res=>{
             const moviePop = res.data;
             setMovieDataP(moviePop.results);
@@ -20,7 +20,7 @@ export default function Movie() {
     //탑 무비
     useEffect(function(){
         dbData
-        .get('/tv/top_rated')
+        .get('/movie/top_rated')
         .then(res=>{
             const movieTop = res.data;
             setMovieDataT(movieTop.results);
@@ -31,7 +31,7 @@ export default function Movie() {
         <>
         <article>
             <section className='movie'>
-                <h2>Trending TV</h2>
+                <h2>Trending Movies</h2>
                 <ul className='movieList'>
                     {
                         movieDataP.map((e)=>(
@@ -45,7 +45,7 @@ export default function Movie() {
             </section>
 
             <section className='movie'>
-                <h2>Top Rated TV</h2>
+                <h2>Top Rated Movies</h2>
                 <ul className='movieList'>
                     {
                         movieDataT.map((e)=>(

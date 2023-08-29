@@ -1,7 +1,7 @@
 import React, { useEffect, useState  } from 'react'
 import axios from 'axios'
 
-export default function Movie() {
+export default function Ttv() {
     const [movieDataP, setMovieDataP] = useState([]);
     const [movieDataT, setMovieDataT] = useState([]);
     const dbData = axios.create({

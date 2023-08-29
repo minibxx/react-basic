@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gasoek+One&family=Jua&family=Montserrat:ital,wght@0,600;1,500&family=Poor+Story&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+*{font-family: Montserrat,sans-serif;background-color: black;}
+a{ text-decoration: none; }
+ul, li{ list-style-type: none; padding: 0; margin: 0;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 30px 10vw;
+  font-size: 34px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-right{
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+  margin: 8px 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+article{
+  padding: 0 10vw;
+  color: #fff;
 }
+.movie{margin: 50px 0;}
+.movieList{display: flex;}
+.movie-title{font-size: 15px; margin:10px 0;}

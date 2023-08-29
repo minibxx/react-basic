@@ -5,14 +5,18 @@ import Main from './component/Main';
 import Home from './component/Home';
 import Movie from './component/Movie';
 import Tv from './component/Tv';
+import axios from 'axios';
+
 
 function App() {
+
   return (
     
     <BrowserRouter>
+    
       <nav>
-        <Link to="">YFLIX</Link>
-        <div>
+        <div><Link to="/home">YFLIX</Link></div>
+        <div className='nav-right'>
           <Link to="/home">Home</Link>
           <Link to="/movie">Movie</Link>
           <Link to="/tv">TV series</Link>
@@ -21,7 +25,6 @@ function App() {
 
       <main>
         <Routes>
-          <Route path='/' element={<Main />}/>
           <Route path='/home' element={<Home />}/>
           <Route path='/movie' element={<Movie />}/>
           <Route path='/tv' element={<Tv />}/>

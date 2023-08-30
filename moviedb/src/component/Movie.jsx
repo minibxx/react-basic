@@ -11,19 +11,10 @@ export default function Movie() {
     //트랜딩 무비
     useEffect(function(){
         dbData
-        .get('/tv/popular')
+        .get('/movie/popular')
         .then(res=>{
             const moviePop = res.data;
             setMovieDataP(moviePop.results);
-        })
-    },[])
-    //탑 무비
-    useEffect(function(){
-        dbData
-        .get('/tv/top_rated')
-        .then(res=>{
-            const movieTop = res.data;
-            setMovieDataT(movieTop.results);
         })
     },[])
 
@@ -31,12 +22,16 @@ export default function Movie() {
         <>
         <article>
             <section className='movie'>
-                <h2>Trending TV</h2>
-                <ul className='movieList'>
+                <h2 className='center'>Movie</h2>
+                <form className='search-bt'>
+                    <input type="text" placeholder='Enter keyword' />
+                    <button>search</button>
+                </form>
+                <ul className='movieList_gap'>
                     {
                         movieDataP.map((e)=>(
-                            <li key={e.id}>
-                                <img src={`https://image.tmdb.org/t/p/w200${e.poster_path}`}/>
+                            <li className='movie_con' key={e.id}>
+                                <img className='radius' src={`https://image.tmdb.org/t/p/w200${e.poster_path}`}/>
                                 <div className='movie-title'>{e.title}</div>
                             </li>
                         ))
@@ -44,19 +39,6 @@ export default function Movie() {
                 </ul>
             </section>
 
-            <section className='movie'>
-                <h2>Top Rated TV</h2>
-                <ul className='movieList'>
-                    {
-                        movieDataT.map((e)=>(
-                            <li key={e.id}>
-                                <img src={`https://image.tmdb.org/t/p/w200${e.poster_path}`}/>
-                                <div className='movie-title'>{e.title}</div>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </section>
         </article>
         </>
     )

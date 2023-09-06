@@ -1,6 +1,6 @@
 import React, { useEffect, useState  } from 'react'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom';
 export default function Movie() {
     const [movieDataP, setMovieDataP] = useState([]);
     const [movieDataT, setMovieDataT] = useState([]);
@@ -46,7 +46,7 @@ export default function Movie() {
                         filterMovie(movieDataP).map((e)=>(
                             <li className='movie_con' key={e.id}>
                                 <img className='radius' src={`https://image.tmdb.org/t/p/w200${e.poster_path}`}/>
-                                <div className='movie-title'>{e.title}</div>
+                                <Link className='movie-title' to ={`/movie/${e.id}`}>{e.title}</Link>
                             </li>
                         ))
                     }

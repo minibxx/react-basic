@@ -35,7 +35,7 @@ function Home() {
                         <button className='trailer-bt'>Watch trailer</button>
                       </div>
                     </div>
-                    <img className="poster" src={`https://image.tmdb.org/t/p/w200${v.poster_path}`}/>
+                    <img className="poster" src={`https://image.tmdb.org/t/p/w300${v.poster_path}`}/>
                   </div>
                 </article>
               </div>

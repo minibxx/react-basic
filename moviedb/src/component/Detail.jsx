@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import Cast from './Cast';
 
 function Detail() {
-    const [detail, setDetail] = useState([]);
+    const [detail, setDetail] = useState({});
     const {id, type} = useParams();
    
     useEffect(()=>{
@@ -16,33 +16,33 @@ function Detail() {
             setDetail(result.data)
             console.log(detail);
         })
-    },[])
+    },[]);
 
-    if(detail && detail.length <= 0) return <></>;
+    if(!detail) return <></>;
 
     return (
-    <>
-        <article >
-            <div className='flex article-D'>
-                <img className='posterD' src={`https://image.tmdb.org/t/p/w300${detail.poster_path}`}/>
-                <div className='column margin-L'>
-                    <div className='Hmovie-title'>{detail.original_title}</div>
-                    <div className='genres'>
-                        {
-                            detail.genres.map((v)=>(
-                                <span className='genre'>{v.name}</span>
-                            ))
-                        }
+        <>
+            <article >
+                <div className='flex article-D'>
+                    <img className='posterD' src={`https://image.tmdb.org/t/p/w300${detail.poster_path}`}/>
+                    <div className='column margin-L'>
+                        <div className='Hmovie-title'>{detail.original_title}</div>
+                        <div className='genres'>
+                            {
+                                detail.genres.map((v)=>(
+                                    <span className='genre'>{v.name}</span>
+                                ))
+                            }
+                        </div>
+                        <div className='Hmovie-overview Dmovie-overview'>{detail.overview}</div>
+                        <div className='Hmovie-cast'>Casts</div>
+                        <Cast type={type} id={id} />
+                        
                     </div>
-                    <div className='Hmovie-overview Dmovie-overview'>{detail.overview}</div>
-                    <div className='Hmovie-cast'>Casts</div>
-                    <Cast type={type} id={id} />
-                    
                 </div>
-            </div>
-        </article>
-    </>
-  )
+            </article>
+        </>
+    )
 }
 
 export default Detail   

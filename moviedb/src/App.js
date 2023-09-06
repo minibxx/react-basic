@@ -7,6 +7,7 @@ import Movie from './component/Movie';
 import Tv from './component/Tv';
 import axios from 'axios';
 import Detail from './component/Detail';
+import Movie2 from './component/Movie2';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/home' element={<Home />}/>
-          <Route path='/movie' element={<Movie />}/>
+          <Route path='/movie' element={<Movie2 />}/>
           <Route path='/tv' element={<Tv />}/>
           <Route path='/:type/:id' element={<Detail />}/>
         </Routes>

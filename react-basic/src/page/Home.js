@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import lll from '../page/brave-cookie.gif';
+import lll from './brave-cookie.gif';
 
 function Home() {
   
